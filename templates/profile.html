@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% if user.is_authenticated %}
+<a href='/signout'>Logout</a>
+<br>
+<a href='#'>Welcome,{{user.username}}, you are logged in.</a>
+
+{% else %}
+<a href='/signout'>Logout</a>
+{% endif %}
+{% endblock %}

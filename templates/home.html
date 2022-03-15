@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<h3>Welcome</h3>
+
+<button type='submit'><a href="{% url 'signup' %}">SignUp</a></button>
+<button type='submit'><a href="{% url 'login' %}">SignIn</a></button>
+
+
+{% endblock %}
